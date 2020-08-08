@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>数据分析</title>
+    <link rel="stylesheet" href="{% static 'datatables/dataTables.semanticui.min.css' %}">
+    <link href="https://cdn.bootcdn.net/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet">
+    <script src="{% static 'jquery/jquery-3.4.1.js' %}"></script>
+    <script src="{% static 'datatables/jquery.dataTables.min.js' %}"></script>
+    <script src="{% static 'datatables/dataTables.semanticui.min.js' %}"></script>
+    <script src="hhttps://cdn.datatables.net/plug-ins/1.10.21/dataRender/percentageBars.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/semantic-ui/2.4.1/semantic.js"></script>
+    <script src="{% static 'echarts/echarts.min.js' %}"></script>
+    <script src="{% static 'echarts/china.js' %}"></script>
+</head>
+<body>
+<!-- 入导航栏 -->
+{% include 'chpa_data/header.html'%}
+
+<!-- 预留具体页面的位置 -->
+{% block body %}
+
+{% endblock body %}
+
+<!-- 引入注脚 -->
+{% include 'chpa_data/footer.html' %}
+
+</body>
+</html>
