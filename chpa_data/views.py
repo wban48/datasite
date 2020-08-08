@@ -85,8 +85,7 @@ def query(request):
         'market_size': kpi(pivoted)[0],
         'market_gr': kpi(pivoted)[1],
         'market_cagr': kpi(pivoted)[2],
-        'ptable': ptable(pivoted).to_html(
-            formatters=build_formatters_by_cl(ptable(pivoted))),
+        'ptable': table,
     }
     for v, k in context.items():
         # int64对象，json库不认识。
